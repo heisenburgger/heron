@@ -3,5 +3,7 @@ services:
   app:
     container_name: heron
     build: .
+    environment:
+      - PORT=7777
     ports:
-      - 3000:3000
+      - 7777:7777
